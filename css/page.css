@@ -1,0 +1,68 @@
+/* 메인 슬라이더 */
+.mainSwiper{background-color: lightblue; height: 100vh;}
+.mainSwiper .swiper-slide{display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.mainSwiper .swiper-slide h2{font-size: 73.5px; font-weight: 700; font-style: italic; letter-spacing: 10px; padding-top: 150px; margin-bottom: 55px; background: url('../images/mainSliderIcon01.png') no-repeat center top; }
+.mainSwiper .swiper-slide p{max-width: 920px; font-size: 20px; font-weight: 400; line-height: 32px; margin-bottom: 35px;}
+.mainSwiper .swiper-slide a{background-color: #de0000;}
+.mainSwiper .swiper-slide.first{background-image: url('../images/mainSliderBG01.png');}
+
+
+/* 공통 */
+section[class $= 'Area']{padding-top: 130px; padding-bottom: 100px;}
+section[class $= 'Area'] h2:first-child{font-size: 42px; font-weight: 700; text-align: center; margin-bottom: 100px;}
+section[class $= 'Area'] small:first-child{ display: block; font-size: 34px; font-weight: 700; text-align: center; margin-bottom: 70px;}
+section[class $= 'Area'] h2:nth-child(2){font-size: 52px; font-weight: 700; letter-spacing: 10px; font-style: italic; text-align: center; margin-bottom: 60px; }
+
+
+/* 서비스 */
+
+
+/* 고객 및 파트너 */
+.customersArea > div:not(:last-of-type){margin-bottom: 130px;}
+.customersArea > div h3{font-size: 30px; font-weight: 700; text-align: center; margin-bottom: 65px;}
+.customersArea > div h3 span{display: inline-block; padding-bottom: 10px; border-bottom: 2px solid black;}
+.customersArea > div ul::after{content: ''; display: block; visibility: hidden; clear: both;}
+/* .customersArea > div ul{max-width: 1040px; margin: 0 auto;} */
+.customersArea > div ul li{float: left; width: 50%; box-sizing: border-box;}
+.customersArea > div ul li:nth-child(2n + 1){}
+.customersArea > div ul li:nth-child(2n){padding-left: 70px; border-left: 1px solid #dfdfdf;}
+.customersArea > div ul li:nth-child(n + 3){margin-top: 30px;}
+.customersArea > div ul li:first-child:last-of-type{float: none; padding: 0; margin: 0 auto;}
+.customersArea > div ul li figure{display: flex;}
+.customersArea > div ul li figure img{margin-right: 30px;}
+.customersArea > div ul li figure figcaption{font-size: 22px; color: #666666; line-height: 28px; display: flex; flex-direction: column; justify-content: flex-end; padding-bottom: 10px;}
+.customersArea > div ul li figure figcaption b{display: block; color: black;}
+
+
+/* 모집 */
+.recruitArea{background-color: #f3f3f3;}
+.recruitArea ul{display: flex; justify-content: space-around;}
+.recruitArea ul li{width: 291px; text-align: center; padding-top: 340px; background-repeat: no-repeat; background-position: center top;}
+.recruitArea ul li:nth-child(1){background-image: url('../images/recruitImg01.png');}
+.recruitArea ul li:nth-child(2){background-image: url('../images/recruitImg02.png');}
+.recruitArea ul li:nth-child(3){background-image: url('../images/recruitImg03.png');}
+/* .recruitArea ul li > *{width: 260px; margin: 0 auto;} */
+.recruitArea ul li strong{display: block; min-height: 56px; font-size: 26px; font-weight: 600; line-height: 28px; margin-bottom: 15px;}
+.recruitArea ul li p{font-size: 20px; font-weight: 400; line-height: 31px;}
+
+
+/* 초대 */
+.inviteArea{background: url('../images/inviteBG.png') no-repeat center / cover fixed; padding: 260px 0 290px; text-align: center; color: white; position: relative; }
+.inviteArea::before{content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.35);}
+.inviteArea > *{position: relative; z-index: 1;}
+.inviteArea strong{display: block; font-size: 34px; font-weight: 700; margin-bottom: 55px;}
+.inviteArea p{font-size: 20px; font-weight: 500; line-height: 32px;}
+
+
+/* 문의 */
+.contactUsArea fieldset ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
+.contactUsArea fieldset ul li{width: 100%;  display: flex; flex-wrap: wrap; align-items: center; box-sizing: border-box;}
+.contactUsArea fieldset ul li:not(:last-child){padding-bottom: 10px; border-bottom: 2px solid black;}
+.contactUsArea fieldset ul li:not(:nth-last-child(-n + 2)){margin-bottom: 40px;}
+.contactUsArea fieldset ul li:last-child{margin-top: 20px;}
+.contactUsArea fieldset ul li.case01{width: 45%;}
+.contactUsArea fieldset ul li label{font-size: 20px; font-weight:500;}
+.contactUsArea fieldset ul li label + *{font-size: 20px; font-weight:500; border: none;}
+.contactUsArea fieldset ul li label + input{flex: 1; padding-left: 20px; outline: none;}
+.contactUsArea fieldset ul li label + textarea{width: 100%; min-height: 240px; padding-top: 10px; outline: none;}
+.contactUsArea fieldset ul li input[type="checkbox"]{width: 18px; height: 18px; margin-right: 15px; }

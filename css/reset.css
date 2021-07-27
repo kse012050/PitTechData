@@ -15,13 +15,15 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video ,input , textarea {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font-family: 'Noto Sans KR';
 	vertical-align: baseline;
+	word-break: keep-all;
+	letter-spacing: -0.5px;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -46,3 +48,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+a{text-decoration: none;}
+button{border: none; background-color: transparent; padding: 0; cursor: pointer;}
