@@ -14,9 +14,15 @@
         $(document).ready(function(){
             var swiper01 = new Swiper(".mySwiper01", {
                 slidesPerView: 3,
-                freeMode: true,
+                // freeMode: true,
                 // watchSlidesVisibility: true,
                 // watchSlidesProgress: true,
+                thumbs: {
+                    swiper: swiper01,
+                },
+                controller:{
+                    control:swiper02
+                }
                 
             });
             var swiper02 = new Swiper(".mySwiper02", {
@@ -24,7 +30,13 @@
                 thumbs: {
                     swiper: swiper01,
                 },
+                controller:{
+                    control:swiper01
+                }
             });
+
+            // swiper01.controller.control = swiper02;
+            // swiper02.controller.control = swiper01;
         })
     </script>
      <!-- Demo styles -->

@@ -1,31 +1,65 @@
 /* 영문 Poppins */
 .btn , h2 , h3 , small{font-family: 'Poppins';}
 
-/* width */
-.width1560 , .width1040{margin: 0 auto;}
-.width1560{max-width: 1560px;}
-.width1040{max-width: 1040px;}
+@media screen and (min-width:640px) and (max-width:1279px) {
+    /* width */
+    .width1560 , .width1040{margin: 0 auto;}
+    .width1560{max-width: 768px; width: calc(100% - 60px);}
+    .width1040{max-width: 500px; width: calc(100% - 60px);}
 
-/* 버튼 */
-.btn{display: block; width: 145px; line-height: 45px; margin: 0 auto; text-align: center; font-size: 15px; font-weight: 700; color: white; border-radius: 100px;}
-.btn.case02{ background-color: #000000; margin-top: 50px;}
+    /* 버튼 */
+    .btn{display: block; width: 250px; line-height: 75px; margin: 0 auto; text-align: center; font-size: 22px; font-weight: 700; color: white; border-radius: 100px;}
+    .btn.case02{ background-color: #000000; margin-top: 70px;}
 
-/* header - 로고 메뉴 버튼 */
-header{position: fixed; left: 0; top: 0; width: 100%; z-index: 100;}
-header div{max-width: 1825px; margin: 0 auto; display: flex; justify-content: space-between; line-height: 100px;}
-header div h1{max-width: 360px; line-height: 0;}
-header div h1 img{width: 100%;}
-header div nav{display: flex; align-items: center;}
-header div nav ul{display: flex;}
-header div nav ul li{padding: 0 25px;}
-header div nav ul li a{display: block; font-size: 19px; color: white; font-weight: bold;}
-header div nav button{width: 30px; margin-left: 45px;}
-header div nav button span{display: block; height: 2px; background-color: white; }
-header div nav button span:nth-child(1){width: 20px; margin-left: auto; margin-bottom: 10px;}
+    /* header - 로고 메뉴 버튼 */
+    header{position: fixed; left: 0; top: 0; width: 100%; z-index: 100;}
+    header div{max-width: 1825px; margin: 0 auto; display: flex; justify-content: space-between; line-height: 100px;}
+    header div h1{width: 262px; height: 90px; line-height: 0;}
+    header div h1 a{display: block; width: 100%; height: 100%; background: url('../images/m_logo.png') no-repeat center / cover; text-indent: -9999px;}
+    header div nav{display: flex; align-items: center;}
+    header div nav ul{display: flex; display: none;}
+    header div nav ul li{padding: 0 25px;}
+    header div nav ul li a{display: block; font-size: 19px; color: white; font-weight: bold;}
+    header div nav button{width: 50px; margin-right: 30px;}
+    header div nav button span{display: block; height: 3px; background-color: white; }
+    header div nav button span:nth-child(1){width: 32px; margin-left: auto; margin-bottom: 15px;}
 
-footer{background-color: #de0000; padding: 125px 0;}
-footer > div{font-size: 18px; color: white;}
-footer > div h2{margin-bottom: 110px;}
-footer > div address{font-weight: 500; font-style: normal; margin-bottom: 15px;}
-footer > div address a{display: inline-block; color: white; margin-left: 15px;}
-footer > div p{font-weight: 400;}
+    footer{background-color: #de0000; padding: 125px 0;}
+    footer > div{font-size: 18px; color: white;}
+    footer > div h2{margin-bottom: 110px;}
+    footer > div address{font-weight: 400; font-style: normal; margin-bottom: 15px;}
+    footer > div address a{display: block; color: white; margin-top: 15px;}
+    footer > div p{font-weight: 400;}    
+}
+
+
+@media screen and (min-width:1280px) {
+    /* width */
+    .width1560 , .width1040{margin: 0 auto;}
+    .width1560{max-width: 1560px;}
+    .width1040{max-width: 1040px;}
+
+    /* 버튼 */
+    .btn{display: block; width: 145px; line-height: 45px; margin: 0 auto; text-align: center; font-size: 15px; font-weight: 700; color: white; border-radius: 100px;}
+    .btn.case02{ background-color: #000000; margin-top: 50px;}
+
+    /* header - 로고 메뉴 버튼 */
+    header{position: fixed; left: 0; top: 0; width: 100%; z-index: 100;}
+    header div{max-width: 1825px; margin: 0 auto; display: flex; justify-content: space-between; line-height: 100px;}
+    header div h1{width: 360px; line-height: 0;}
+    header div h1 a{display: block; width: 100%; height: 100%; background: url('../images/logo.png') no-repeat center / cover; text-indent: -9999px;}
+    header div nav{display: flex; align-items: center;}
+    header div nav ul{display: flex;}
+    header div nav ul li{padding: 0 25px;}
+    header div nav ul li a{display: block; font-size: 19px; color: white; font-weight: bold;}
+    header div nav button{width: 30px; margin-left: 45px;}
+    header div nav button span{display: block; height: 2px; background-color: white; }
+    header div nav button span:nth-child(1){width: 20px; margin-left: auto; margin-bottom: 10px;}
+
+    footer{background-color: #de0000; padding: 125px 30px;}
+    footer > div{font-size: 18px; color: white;}
+    footer > div h2{margin-bottom: 110px;}
+    footer > div address{font-weight: 500; font-style: normal; margin-bottom: 15px;}
+    footer > div address a{display: inline-block; color: white; margin-left: 15px;}
+    footer > div p{font-weight: 400;}    
+}
