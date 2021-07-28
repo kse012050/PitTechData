@@ -105,7 +105,7 @@
 
     /* 서비스 */
     .serviceArea .servicSwiper01{padding-bottom: 30px; z-index: 2;}
-    .serviceArea .servicSwiper01 .swiper-slide{padding: 40px 0; border-width: 1px 1px 20px; border-style: solid; border-color: transparent; box-sizing: border-box; }
+    .serviceArea .servicSwiper01 .swiper-slide{padding: 40px 0; border-width: 1px 1px 20px; border-style: solid; border-color: transparent; box-sizing: border-box; cursor: pointer;}
     .serviceArea .servicSwiper01 .swiper-slide strong{display: block; font-size: 28px; font-weight: 700; padding-top: 130px; margin-bottom: 25px; background-repeat: no-repeat; background-position: center top;}
     .serviceArea .servicSwiper01 .swiper-slide:nth-of-type(3n + 1) strong{background-image: url('../images/serviceIcon01.png');}
     .serviceArea .servicSwiper01 .swiper-slide:nth-of-type(3n + 2) strong{background-image: url('../images/serviceIcon02.png');}
@@ -113,17 +113,26 @@
     .serviceArea .servicSwiper01 .swiper-slide p{font-size: 19px; font-weight: 500; line-height: 30px; min-height: 185px;}
     .serviceArea .servicSwiper01 .swiper-slide span.material-icons{font-size: 18px; font-weight: 700; padding: 5px; color: #888888; border: 1px solid #888888;}
     .serviceArea .servicSwiper01 .swiper-slide.swiper-slide-thumb-active{border-color: #de0000; }
+    .serviceArea .servicSwiper01 .swiper-slide:nth-of-type(3n + 1).swiper-slide-thumb-active strong{background-image: url('../images/serviceIcon01_active.png');}
+    .serviceArea .servicSwiper01 .swiper-slide:nth-of-type(3n + 2).swiper-slide-thumb-active strong{background-image: url('../images/serviceIcon02_active.png');}
+    .serviceArea .servicSwiper01 .swiper-slide:nth-of-type(3n + 3).swiper-slide-thumb-active strong{background-image: url('../images/serviceIcon03_active.png');}
     .serviceArea .servicSwiper01 .swiper-slide.swiper-slide-thumb-active span.material-icons{color: #de0000; border-color: #de0000;}
     .serviceArea .servicSwiper01 .swiper-slide.swiper-slide-thumb-active::after{content: ''; position: absolute; left: calc(50% - 20px); bottom: -40px; width: 0; height: 0; border-width: 20px 20px 0; border-style: solid; border-color: #de0000 transparent transparent;}
 
     .serviceArea .servicSwiper02{background-color: #f3f3f3; padding: 80px 0; text-align: left; top: -30px;}
-    .serviceArea .servicSwiper02 ul{display: flex;}
-    .serviceArea .servicSwiper02 ul li{flex: 1; padding: 0 4%;}
-    .serviceArea .servicSwiper02 ul li strong{display: block; font-size: 22px; font-weight: 700; padding-top: 110px; margin-bottom: 25px; background-repeat: no-repeat; background-position: left top;}
-    .serviceArea .servicSwiper02 ul li:nth-child(1) strong{background-image: url('../images/service01_01.png');}
-    .serviceArea .servicSwiper02 ul li:nth-child(2) strong{background-image: url('../images/service01_02.png');}
-    .serviceArea .servicSwiper02 ul li:nth-child(3) strong{background-image: url('../images/service01_03.png');}
-    .serviceArea .servicSwiper02 ul li p{font-size: 16px; font-weight: 400; line-height: 25px; color: #666666;}
+    .serviceArea .servicSwiper02 .swiper-slide ul{display: flex;}
+    .serviceArea .servicSwiper02 .swiper-slide ul li{flex: 1; padding: 0 4%;}
+    .serviceArea .servicSwiper02 .swiper-slide ul li strong{display: block; font-size: 22px; font-weight: 700; padding-top: 110px; margin-bottom: 25px; background-repeat: no-repeat; background-position: left top;}
+    .serviceArea .servicSwiper02 .swiper-slide:nth-of-type(3n + 1) ul li:nth-child(1) strong{background-image: url('../images/service01_01.png');}
+    .serviceArea .servicSwiper02 .swiper-slide:nth-of-type(3n + 1) ul li:nth-child(2) strong{background-image: url('../images/service01_02.png');}
+    .serviceArea .servicSwiper02 .swiper-slide:nth-of-type(3n + 1) ul li:nth-child(3) strong{background-image: url('../images/service01_03.png');}
+    .serviceArea .servicSwiper02 .swiper-slide:nth-of-type(3n + 2) ul li:nth-child(1) strong{background-image: url('../images/service02_01.png');}
+    .serviceArea .servicSwiper02 .swiper-slide:nth-of-type(3n + 2) ul li:nth-child(2) strong{background-image: url('../images/service02_02.png');}
+    .serviceArea .servicSwiper02 .swiper-slide:nth-of-type(3n + 2) ul li:nth-child(3) strong{background-image: url('../images/service02_03.png');}
+    .serviceArea .servicSwiper02 .swiper-slide:nth-of-type(3n + 3) ul li:nth-child(1) strong{background-image: url('../images/service03_01.png');}
+    .serviceArea .servicSwiper02 .swiper-slide:nth-of-type(3n + 3) ul li:nth-child(2) strong{background-image: url('../images/service03_02.png');}
+    .serviceArea .servicSwiper02 .swiper-slide:nth-of-type(3n + 3) ul li:nth-child(3) strong{background-image: url('../images/service03_03.png');}
+    .serviceArea .servicSwiper02 .swiper-slide ul li p{font-size: 16px; font-weight: 400; line-height: 25px; color: #666666;}
 
 
     /* 고객 및 파트너 */
