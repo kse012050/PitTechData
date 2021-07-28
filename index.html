@@ -14,10 +14,9 @@
     <!-- swiper -->
     <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
     <!-- <script src="js/swiper.min.js"></script> -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- js -->
     <script>
@@ -34,6 +33,10 @@
 
             var servicSwiper01 = new Swiper(".servicSwiper01", {
                 // slidesPerView: 3,
+                navigation: {
+                    nextEl: ".servicSwiper01_next",
+                    prevEl: ".servicSwiper01_prev",
+                },
                 
                 breakpoints: {
                 480: {
@@ -200,6 +203,8 @@
                     </span>
                 </div>
             </div>
+            <div class="swiper-button-next servicSwiper01_next"></div>
+            <div class="swiper-button-prev servicSwiper01_prev"></div>
         </div>
         <div thumbsSlider="" class="swiper-container servicSwiper02">
             <div class="swiper-wrapper">
