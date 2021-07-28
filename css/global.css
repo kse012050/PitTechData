@@ -2,7 +2,43 @@
 .btn , h2 , h3 , small , 
 .serviceArea strong{font-family: 'Poppins';}
 
-@media screen and (min-width:640px) and (max-width:1279px) {
+[data-scroll="bottomTop"]{transform: translateY(50px); opacity: 0; /* transition-duration: 1s; transition-property: transform , opacity; */}
+/* [data-scroll="bottomTop"].active{transform: translateY(0px); opacity: 1;} */
+
+@media screen and (max-width:640px) {
+    html{font-size: 2.5vw;}
+
+    /* width */
+    .width1560 , .width1040{margin: 0 auto;}
+    .width1560{max-width: 768px; width: calc(100% - 60px);}
+    .width1040{max-width: 500px; width: calc(100% - 60px);}
+
+    .btn{display: block; width: 15.625rem; line-height: 4.688rem; margin: 0 auto; text-align: center; font-size: 1.375rem; font-weight: 700; color: white; border-radius: 6.250rem;}
+    .btn.case02{ background-color: #000000; margin-top: 4.375rem;}
+
+    /* header - 로고 메뉴 버튼 */
+    header{position: fixed; left: 0; top: 0; width: 100%; z-index: 100; transition: 0.5s background-color;}
+    header div{max-width: 1825px; margin: 0 auto; display: flex; justify-content: space-between; line-height: 6.250rem;}
+    header div h1{width: 16.375rem; height: 5.625rem; line-height: 0;}
+    header div h1 a{display: block; width: 100%; height: 100%; background: url('../images/m_logo.png') no-repeat center / cover; text-indent: -9999px;}
+    header div nav{display: flex; align-items: center;}
+    header div nav ul{display: flex; display: none;}
+    header div nav ul li{padding: 0 1.563rem;}
+    header div nav ul li a{display: block; font-size: 1.188rem; color: white; font-weight: bold;}
+    header div nav button{width: 3.125rem; margin-right: 1.875rem;}
+    header div nav button span{display: block; height: 0.188rem; background-color: white; }
+    header div nav button span:nth-child(1){width: 2.000rem; margin-left: auto; margin-bottom: 0.938rem;}
+    header.active{background-color: black;}
+
+    footer{background-color: #de0000; padding: 7.813rem 0;}
+    footer > div{font-size: 1.125rem; color: white;}
+    footer > div h2{margin-bottom: 6.875rem;}
+    footer > div address{font-weight: 400; font-style: normal; margin-bottom: 0.938rem;}
+    footer > div address a{display: block; color: white; margin-top: 0.938rem;}
+    footer > div p{font-weight: 400;}    
+}
+
+@media screen and (min-width:641px) and (max-width:1279px) {
     /* width */
     .width1560 , .width1040{margin: 0 auto;}
     .width1560{max-width: 768px; width: calc(100% - 60px);}

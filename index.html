@@ -19,112 +19,8 @@
     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- js -->
-    <script>
-        $(document).ready(function(){
-            var mainSwiper = new Swiper(".mainSwiper", {
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
-
-            var servicSwiper02;
-            var servicSwiper02Blooen;
-
-            var servicSwiper01 = new Swiper(".servicSwiper01", {
-                // slidesPerView: 3,
-                navigation: {
-                    nextEl: ".servicSwiper01_next",
-                    prevEl: ".servicSwiper01_prev",
-                },
-                
-                breakpoints: {
-                480: {
-                    slidesPerView: 1,
-                    // cssMode: false,
-                    // multipleActiveThumbs:false
-                    /* thumbs: {
-                        swiper: servicSwiper02,
-                    }, */
-                },
-                // when window width is >= 640px
-                1280: {
-                    slidesPerView: 3,
-                    // cssMode: true,
-                    touchMoveStopPropagation:true,
-                    // simulateTouch:false,
-                    // freeMode: true,
-                    watchSlidesVisibility: true,
-                    watchSlidesProgress: true,
-                }
-            }
-            });
-        
-            if($(window).width() > 1280){
-                servicSwiper02 = new Swiper(".servicSwiper02", {
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                    thumbs: {
-                        swiper: servicSwiper01,
-                    },
-                });
-                servicSwiper02Blooen = false;
-            }else{
-                servicSwiper02 = new Swiper(".servicSwiper02", {
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                });
-                servicSwiper01.controller.control = servicSwiper02;
-                servicSwiper02.controller.control = servicSwiper01; 
-                servicSwiper02Blooen = true;
-            }
-
-            $(window).resize(function(){
-                if($(window).width() > 1280 && servicSwiper02Blooen){
-                    // servicSwiper02.destroy();
-                    servicSwiper02.init()
-                    servicSwiper02 = new Swiper(".servicSwiper02", {
-                        navigation: {
-                            nextEl: ".swiper-button-next",
-                            prevEl: ".swiper-button-prev",
-                        },
-                        thumbs: {
-                            swiper: servicSwiper01,
-                        },
-                    });
-                    servicSwiper02Blooen = false;
-                }else if(!servicSwiper02Blooen){
-                    // servicSwiper02.destroy();
-                    servicSwiper02.init()
-                    servicSwiper02 = new Swiper(".servicSwiper02", {
-                        navigation: {
-                            nextEl: ".swiper-button-next",
-                            prevEl: ".swiper-button-prev",
-                        },
-                    });
-                    servicSwiper01.controller.control = servicSwiper02;
-                    servicSwiper02.controller.control = servicSwiper01; 
-                    servicSwiper02Blooen = true;
-                }
-            });
-            // console.log(servicSwiper01);
-            /* servicSwiper01.controller.control = servicSwiper02;
-            servicSwiper02.controller.control = servicSwiper01; */
-
-
-            $(window).scroll(function(){
-                if($(window).scrollTop() > $(window).height() - $('header').height()){
-                    $('header').addClass('active');
-                }else{
-                    $('header').removeClass('active');
-                }
-            })
-        })
-    </script>
+    <script src="https://cdn.tutorialjinni.com/egjs-jquery-transform/2.0.0/transform.min.js"></script>
+    <script src="js/common.js"></script>
 </head>
 <body>
     <header>
@@ -138,7 +34,7 @@
                     <li><a href="#">Recruit</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
-                <button title="menuBtn">
+                <button title="menuBtn" >
                     <span></span>
                     <span></span>
                 </button>
@@ -149,7 +45,7 @@
     <div class="swiper-container mainSwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide first">
-                <h2>We are your Pit Crew</h2>
+                <h2 data-scroll="bottomTop">We are your Pit Crew</h2>
                 <p>
                    데이터 기반 사업에서의 성장의 발판이 될 수 있는<br class="mobile"/> 잠재적인 요소는 빅 데이터에 씨앗처럼 심어져 있습니다. <br class="mobile"/><br/>
                     하지만 이를 재배하여 활용할 수 있는<br class="mobile"/> 열매로 수확하기 위한 길은 번거롭고 복잡합니다. <br class="mobile"/><br/>
@@ -167,7 +63,7 @@
         <h2>Service</h2>
         <div thumbsSlider=""  class="swiper-container width1560 servicSwiper01">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-scroll="bottomTop">
                     <strong>Data Sciences</strong>
                     <p>
                         인공 지능과 머신 러닝을 활용하여<br/>
@@ -178,7 +74,7 @@
                         add
                     </span>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-scroll="bottomTop">
                     <strong>Data Analytics</strong>
                     <p>
                         수익성 향상, 운영 효율성 개선,<br/>
@@ -189,7 +85,7 @@
                         add
                     </span>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-scroll="bottomTop">
                     <strong>Data Engineering</strong>
                     <p>
                         Enterprise Data의 수집/가공/관리의<br/>
