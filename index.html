@@ -111,6 +111,15 @@
             // console.log(servicSwiper01);
             /* servicSwiper01.controller.control = servicSwiper02;
             servicSwiper02.controller.control = servicSwiper01; */
+
+
+            $(window).scroll(function(){
+                if($(window).scrollTop() > $(window).height() - $('header').height()){
+                    $('header').addClass('active');
+                }else{
+                    $('header').removeClass('active');
+                }
+            })
         })
     </script>
 </head>
