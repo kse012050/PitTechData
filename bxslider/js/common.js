@@ -6,7 +6,8 @@ $(document).ready(function(){
 
 
     var serviceSlider = $('.serviceArea .slider').bxSlider({
-        oneToOneTouch:true,
+        oneToOneTouch:false,
+        // touchEnabled:false,
         infiniteLoop:false,
         pagerCustom:'.pagerArea',
     });
