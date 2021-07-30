@@ -1,45 +1,39 @@
 $(document).ready(function(){
-    var mainSwiper = new Swiper(".mainSwiper", {
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
+    $('.mainSlider .slider').bxSlider({
+        pager:false,
+        infiniteLoop:false,
     });
 
-    var servicSwiper02;
-    var servicSwiper02Blooen;
 
-    var servicSwiper01 = new Swiper(".servicSwiper01", {
-        navigation: {
-            nextEl: ".servicSwiper01_next",
-            prevEl: ".servicSwiper01_prev",
-        },
-        
-        breakpoints: {
-        100: {
-            slidesPerView: 1,
-        },
-        1280: {
-            slidesPerView: 3,
-            touchMoveStopPropagation:true,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
+    var serviceSlider = $('.serviceArea .slider').bxSlider({
+        oneToOneTouch:true,
+        infiniteLoop:false,
+        pagerCustom:'.pagerArea',
+    });
+
+    var serviceBoolean = true;
+    var servicePager = $('.serviceArea .pagerArea');
+    service();
+    $(window).resize(function(){
+        service();
+    })
+
+    function service(){
+        if($(window).width() <= 1280 && serviceBoolean){
+            $('.serviceArea .slider > div').each(function(){
+                $(this).prepend(servicePager.clone().children()[$(this).index()]);
+            })
+            servicePager.remove();
+            serviceSlider.reloadSlider()
+            serviceBoolean = false;
+        }else if($(window).width() > 1280 && !serviceBoolean){
+            console.log(11);
+            $('.serviceArea .slider .pager').remove();
+            $('.serviceContent').prepend(servicePager);
+            serviceSlider.reloadSlider()
+            serviceBoolean = true;
         }
     }
-    });
-
-   $('.serviceArea .servicSwiper02 .slider').bxSlider({
-        // pager:false,
-        pagerCustom:'.servicSwiper01'
-   });
-
-   if($(window).width() < 1280){
-        $('.serviceArea .servicSwiper01 .slider').bxSlider({
-            pager:false,
-            controls:false
-        });
-   }
-    
     
     scrollEvent();
     customersImg();

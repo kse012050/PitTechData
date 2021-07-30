@@ -1,125 +1,28 @@
     
 @media screen and (max-width:640px) {
-    html{font-size: 2.5vw;}
+    .serviceArea .slider .pagerArea{width: 100%; z-index: 2; position: relative;}
+    .serviceArea .slider > div .pager a{display: block; padding: 3.750rem 0; background-color: white; box-sizing: border-box; text-align: center; border-width: 1px 1px 1.250rem; border-style: solid; border-color: transparent; position: relative; }
+    .serviceArea .slider > div .pager{text-align: center;}
+    .serviceArea .slider > div .pager a strong{display: block; font-size: 2.000rem; font-weight: 700; padding-top: 8.125rem; margin-bottom: 1.563rem; background-repeat: no-repeat; background-position: center top; background-size: 5.375rem 6.250rem;}
+    .serviceArea .slider > div:nth-of-type(1) .pager a strong{background-image: url('../images/serviceIcon01.png');}
+    .serviceArea .slider > div:nth-of-type(2) .pager a strong{background-image: url('../images/serviceIcon02.png');}
+    .serviceArea .slider > div:nth-of-type(3) .pager a strong{background-image: url('../images/serviceIcon03.png');}
+    .serviceArea .slider > div .pager a p{font-size: 1.375rem; font-weight: 500; line-height: 1.875rem; min-height: 8.750rem; max-width: 430px; margin: 0 auto;}
+    .serviceArea .slider > div .pager a span.material-icons{font-size: 1.125rem; font-weight: 700; padding: 0.313rem; color: #888888; border: 1px solid #888888;}
+    .serviceArea .slider > div:nth-of-type(1)[aria-hidden="false"] .pager strong{background-image: url('../images/serviceIcon01_active.png');}
+    .serviceArea .slider > div:nth-of-type(2)[aria-hidden="false"] .pager strong{background-image: url('../images/serviceIcon02_active.png');}
+    .serviceArea .slider > div:nth-of-type(3)[aria-hidden="false"] .pager strong{background-image: url('../images/serviceIcon03_active.png');}
+    .serviceArea .slider > div[aria-hidden="false"] .pager a{border-color: #de0000; }
+    .serviceArea .slider > div[aria-hidden="false"] .pager a span.material-icons{color: #de0000; border-color: #de0000;}
+    .serviceArea .slider > div[aria-hidden="false"] .pager a::after{content: ''; position: absolute; left: calc(50% - 0.938em); bottom: -2.188rem; width: 0; height: 0; border-width: 0.938rem 0.938rem 0; border-style: solid; border-color: #de0000 transparent transparent;} 
 
-    /* width */
-    .width1560 , .width1040{margin: 0 auto;}
-    .width1560{max-width: 768px; width: calc(100% - 60px);}
-    .width1040{max-width: 500px; width: calc(100% - 60px);}
-
-    .btn{display: block; width: 15.625rem; line-height: 4.688rem; margin: 0 auto; text-align: center; font-size: 1.375rem; font-weight: 700; color: white; border-radius: 6.250rem;}
-    .btn.case02{ background-color: #000000; margin-top: 4.375rem;}
-
-    /* header - 로고 메뉴 버튼 */
-    header{position: fixed; left: 0; top: 0; width: 100%; z-index: 100; transition: 0.5s background-color;}
-    header div{max-width: 1825px; margin: 0 auto; display: flex; justify-content: space-between; line-height: 6.250rem;}
-    header div h1{width: 16.375rem; height: 5.625rem; line-height: 0;}
-    header div h1 a{display: block; width: 100%; height: 100%; background: url('../images/m_logo.png') no-repeat center / cover; text-indent: -9999px;}
-    header div nav{display: flex; align-items: center;}
-    header div nav ul{display: flex; display: none;}
-    header div nav ul li{padding: 0 1.563rem;}
-    header div nav ul li a{display: block; font-size: 1.188rem; color: white; font-weight: bold;}
-    header div nav button{width: 3.125rem; margin-right: 1.875rem;}
-    header div nav button span{display: block; height: 0.188rem; background-color: white; }
-    header div nav button span:nth-child(1){width: 2.000rem; margin-left: auto; margin-bottom: 0.938rem;}
-    header.active{background-color: black;}
-
-    footer{background-color: #de0000; padding: 7.813rem 0;}
-    footer > div{font-size: 1.125rem; color: white;}
-    footer > div h2{margin-bottom: 6.875rem;}
-    footer > div address{font-weight: 400; font-style: normal; margin-bottom: 0.938rem;}
-    footer > div address a{display: block; color: white; margin-top: 0.938rem;}
-    footer > div p{font-weight: 400;}    
-
-    br{display: none;}
-    br.mobile{display: block;}
-    /* 메인 슬라이더 */
-    .mainSwiper{height: 100vh;}
-    .mainSwiper .swiper-slide{display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; background-repeat: no-repeat; background-position: center; background-size: cover;}
-    .mainSwiper .swiper-slide h2{font-size: 2.688rem; font-weight: 700; font-style: italic; letter-spacing: 0.313rem; padding-top: 9.375rem; margin-bottom: 3.438rem; background: url('../images/mainSliderIcon01.png') no-repeat center top;  background-size: 5.313rem; }
-    .mainSwiper .swiper-slide p{font-size: 1.313rem; font-weight: 400; line-height: 1.875rem; margin-bottom: 4.688rem;}
-    .mainSwiper .swiper-slide a{background-color: #de0000;}
-    .mainSwiper .swiper-slide.first{background-image: url('../images/mainSliderBG01.png');}
-    .mainSwiper .swiper-button-next, .mainSwiper .swiper-button-prev{color: white;}
-    .mainSwiper .swiper-button-next::after, .mainSwiper .swiper-button-prev::after{font-size: 1.250rem;}
-
-
-    /* 공통 */
-    section[class $= 'Area']{padding: 6.563rem 0;}
-    section[class $= 'Area'] h2:first-child{font-size: 2.625rem; font-weight: 700; text-align: center; margin-bottom: 4.688rem;}
-    section[class $= 'Area'] small:first-child{ display: block; font-size: 2.625rem; font-weight: 700; text-align: center; margin-bottom: 4.063rem;}
-    section[class $= 'Area'] h2:nth-child(2){font-size: 2.875rem; font-weight: 700; line-height: 3.688rem; letter-spacing: 0.313rem; font-style: italic; text-align: center; margin-bottom: 4.063rem; }
-
-
-    /* 서비스 */
-    .serviceArea .servicSwiper01{width: 100%; padding-bottom: 0.938rem; z-index: 2;}
-    .serviceArea .servicSwiper01 .swiper-slide{padding: 3.750rem 0; box-sizing: border-box; text-align: center;}
-    .serviceArea .servicSwiper01 .swiper-slide strong{display: block; font-size: 2.000rem; font-weight: 700; padding-top: 8.125rem; margin-bottom: 1.563rem; background-repeat: no-repeat; background-position: center top;}
-    .serviceArea .servicSwiper01 .swiper-slide:nth-of-type(3n + 1) strong{background-image: url('../images/serviceIcon01.png');}
-    .serviceArea .servicSwiper01 .swiper-slide:nth-of-type(3n + 2) strong{background-image: url('../images/serviceIcon02.png');}
-    .serviceArea .servicSwiper01 .swiper-slide:nth-of-type(3n + 3) strong{background-image: url('../images/serviceIcon03.png');}
-    .serviceArea .servicSwiper01 .swiper-slide p{font-size: 1.375rem; font-weight: 500; line-height: 1.875rem; min-height: 8.750rem; max-width: 26.875rem; margin: 0 auto;}
-    .serviceArea .servicSwiper01 .swiper-slide span.material-icons{font-size: 1.125rem; font-weight: 700; padding: 0.313rem; color: #888888; border: 1px solid #888888;}
-    .serviceArea .servicSwiper01 .swiper-slide:nth-of-type(3n + 1).swiper-slide-active strong{background-image: url('../images/serviceIcon01_active.png');}
-    .serviceArea .servicSwiper01 .swiper-slide:nth-of-type(3n + 2).swiper-slide-active strong{background-image: url('../images/serviceIcon02_active.png');}
-    .serviceArea .servicSwiper01 .swiper-slide:nth-of-type(3n + 3).swiper-slide-active strong{background-image: url('../images/serviceIcon03_active.png');}
-    .serviceArea .servicSwiper01 .swiper-slide.swiper-slide-active{border-width: 1px 1px 1.250rem; border-style: solid; border-color: #de0000; }
-    .serviceArea .servicSwiper01 .swiper-slide.swiper-slide-active span.material-icons{color: #de0000; border-color: #de0000;}
-    .serviceArea .servicSwiper01 .swiper-slide.swiper-slide-active::after{content: ''; position: absolute; left: calc(50% - 0.938em); bottom: -2.188rem; width: 0; height: 0; border-width: 0.938rem 0.938rem 0; border-style: solid; border-color: #de0000 transparent transparent;}
-    .serviceArea .servicSwiper01 .swiper-button-next, .serviceArea .servicSwiper01 .swiper-button-prev{color: #de0000;}
-    .serviceArea .servicSwiper01 .swiper-button-disabled{color: #888888;}
-
-    .serviceArea .servicSwiper02{background-color: #f3f3f3; padding: 5.000rem 0; text-align: left; top: -0.938rem;}
-    .serviceArea .servicSwiper02 ul li:not(:last-child){margin-bottom: 6.250rem;}
-    .serviceArea .servicSwiper02 ul li strong{display: block; font-size: 1.750rem; font-weight: 700; padding-top: 6.875rem; margin-bottom: 2.188rem; background-repeat: no-repeat; background-position: left top;}
-    .serviceArea .servicSwiper02 ul li:nth-child(1) strong{background-image: url('../images/service01_01.png');}
-    .serviceArea .servicSwiper02 ul li:nth-child(2) strong{background-image: url('../images/service01_02.png');}
-    .serviceArea .servicSwiper02 ul li:nth-child(3) strong{background-image: url('../images/service01_03.png');}
-    .serviceArea .servicSwiper02 ul li p{font-size: 1.188rem; font-weight: 400; line-height: 1.813rem; color: #666666;}
-    .serviceArea .servicSwiper02 .swiper-button-next, .serviceArea .servicSwiper02 .swiper-button-prev{display: none;}
-
-
-    /* 고객 및 파트너 */
-    .customersArea > div:not(:last-of-type){margin-bottom: 5.625rem;}
-    .customersArea > div h3{font-size: 2.063rem; font-weight: 700; text-align: center; margin-bottom: 1.875rem;}
-    .customersArea > div h3 span{display: inline-block; padding-bottom: 0.625rem; border-bottom: 2px solid black;}
-    .customersArea > div ul li:nth-child(n + 2){padding-top: 2.500rem; border-top: 1px solid #dfdfdf;}
-    .customersArea > div ul li:not(:last-child){margin-bottom: 2.500rem;}
-    .customersArea > div ul li:first-child:last-of-type{float: none; padding: 0; margin: 0 auto;}
-    .customersArea > div ul li figure{display: flex; justify-content: space-between;}
-    .customersArea > div ul li figure figcaption{width: 52%; font-size: 1.375rem; color: #666666; line-height: 1.750rem; display: flex; flex-direction: column; justify-content: flex-end; padding-bottom: 0.625rem;}
-    .customersArea > div ul li figure figcaption b{display: block; color: black;}
-
-
-    /* 모집 */
-    .recruitArea{background-color: #f3f3f3;}
-    .recruitArea ul li{max-width: 19.688rem; margin: 0 auto; text-align: center; padding-top: 20.000rem; background-repeat: no-repeat; background-position: center top;  background-size: 18.188rem;}
-    .recruitArea ul li:not(:last-child){margin-bottom: 6.250rem;}
-    .recruitArea ul li:nth-child(1){background-image: url('../images/recruitImg01.png');}
-    .recruitArea ul li:nth-child(2){background-image: url('../images/recruitImg02.png');}
-    .recruitArea ul li:nth-child(3){background-image: url('../images/recruitImg03.png');}
-    /* .recruitArea ul li > *{width: 260px; margin: 0 auto;} */
-    .recruitArea ul li strong{display: block; font-size: 1.750rem; font-weight: 600; line-height: 1.750rem; margin-bottom: 1.250rem;}
-    .recruitArea ul li p{font-size: 1.375rem; font-weight: 400; line-height: 1.875rem;}
-
-
-    /* 초대 */
-    .inviteArea{background: url('../images/inviteBG.png') no-repeat center / cover fixed; padding: 10.625rem 0; text-align: center; color: white; position: relative; }
-    .inviteArea::before{content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.35);}
-    .inviteArea > *{position: relative; z-index: 1;}
-    .inviteArea strong{display: block; font-size: 2.250rem; font-weight: 700; line-height: 2.813rem; margin-bottom: 2.500rem;}
-    .inviteArea p{font-size: 1.313rem; font-weight: 500; line-height: 1.875rem;}
-
-
-    /* 문의 */
-    .contactUsArea fieldset ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
-    .contactUsArea fieldset ul li{width: 100%;  display: flex; flex-wrap: wrap; align-items: center; box-sizing: border-box;}
-    .contactUsArea fieldset ul li:not(:last-child){padding-bottom: 0.625rem; border-bottom: 2px solid black;}
-    .contactUsArea fieldset ul li:not(:nth-last-child(-n + 2)){margin-bottom: 2.500rem;}
-    .contactUsArea fieldset ul li:last-child{margin-top: 1.875rem; justify-content: center;}
-    .contactUsArea fieldset ul li label{font-size: 1.250rem; font-weight:500;}
-    .contactUsArea fieldset ul li label + *{font-size: 1.250rem; font-weight:500; border: none;}
-    .contactUsArea fieldset ul li label + input{flex: 1; padding-left: 1.250rem; outline: none;}
-    .contactUsArea fieldset ul li label + textarea{width: 100%; min-height: 15.000rem; padding-top: 0.625rem; outline: none; resize: none;}
-    .contactUsArea fieldset ul li input[type="checkbox"]{width: 1.125rem; height: 1.125rem; margin-right: 0.625rem; }
+    .serviceArea .bx-wrapper { box-shadow: none; border: none; background-color: #f3f3f3; margin-bottom: 0;}
+    .serviceArea .slider > div{background-color: #f3f3f3; text-align: left; padding-bottom: 3.750rem;}
+    .serviceArea .slider > div ul{padding-top: 5.000rem;}
+    .serviceArea .slider > div ul li:not(:last-child){margin-bottom: 6.250rem;}
+    .serviceArea .slider > div ul li strong{display: block; font-size: 1.750rem; font-weight: 700; padding-top: 6.875rem; margin-bottom: 2.188rem; background-repeat: no-repeat; background-position: left top; background-size: 5.625rem;}
+    .serviceArea .slider > div ul li:nth-child(1) strong{background-image: url('../images/service01_01.png');}
+    .serviceArea .slider > div ul li:nth-child(2) strong{background-image: url('../images/service01_02.png');}
+    .serviceArea .slider > div ul li:nth-child(3) strong{background-image: url('../images/service01_03.png');}
+    .serviceArea .slider > div ul li p{font-size: 1.188rem; font-weight: 400; line-height: 1.813rem; color: #666666;}
 }
