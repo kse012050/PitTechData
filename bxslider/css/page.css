@@ -9,6 +9,11 @@
     .mainSlider .slider > div p{font-size: 1.313rem; font-weight: 400; line-height: 1.875rem; margin-bottom: 4.688rem;}
     .mainSlider .slider > div a{background-color: #de0000;}
     .mainSlider .slider > div.first{background-image: url('../images/mainSliderBG01.png');}
+    .mainSlider .controls{position: absolute; top: calc(50% - 0.469rem); width: 100%; }
+    .mainSlider .controls div{position: absolute;}
+    .mainSlider .controls div.prev{left: 0.625rem;}
+    .mainSlider .controls div.next{right: 0.625rem;}
+    .mainSlider .controls div a span{font-size: 20px; color: white;}
 
 
     /* 공통 */
@@ -19,6 +24,7 @@
 
 
     /* 서비스 */
+    .serviceArea .serviceContent{position: relative;}
     .serviceArea .slider .pagerArea{width: 100%; z-index: 2; position: relative;}
     .serviceArea .slider > div .pager a{display: block; padding: 3.750rem 0; background-color: white; box-sizing: border-box; text-align: center; border-width: 1px 1px 1.250rem; border-style: solid; border-color: transparent; position: relative; }
     .serviceArea .slider > div .pager{text-align: center;}
@@ -34,6 +40,12 @@
     .serviceArea .slider > div[aria-hidden="false"] .pager a{border-color: #de0000; }
     .serviceArea .slider > div[aria-hidden="false"] .pager a span.material-icons{color: #de0000; border-color: #de0000;}
     .serviceArea .slider > div[aria-hidden="false"] .pager a::after{content: ''; position: absolute; left: calc(50% - 0.938em); bottom: -2.188rem; width: 0; height: 0; border-width: 0.938rem 0.938rem 0; border-style: solid; border-color: #de0000 transparent transparent;} 
+    .serviceArea .controls{position: absolute; top: calc(12% - 1.875rem); width: 100%; }
+    .serviceArea .controls div{position: absolute;}
+    .serviceArea .controls div.prev{left: 0.625rem;}
+    .serviceArea .controls div.next{right: 0.625rem;}
+    .serviceArea .controls div a{ color: #de0000;}
+    .serviceArea .controls div a span{font-size: 3.750rem;}
 
     .serviceArea .bx-wrapper { box-shadow: none; border: none; background-color: #f3f3f3; margin-bottom: 0;}
     .serviceArea .slider > div{background-color: #f3f3f3; text-align: left; padding-bottom: 3.750rem;}
@@ -103,6 +115,11 @@
     .mainSlider .slider > div p{font-size: 21px; font-weight: 400; line-height: 30px; margin-bottom: 75px;}
     .mainSlider .slider > div a{background-color: #de0000;}
     .mainSlider .slider > div.first{background-image: url('../images/mainSliderBG01.png');}
+    .mainSlider .controls{position: absolute; top: calc(50% - 7.5px); width: 100%; }
+    .mainSlider .controls div{position: absolute;}
+    .mainSlider .controls div.prev{left: 10px;}
+    .mainSlider .controls div.next{right: 10px;}
+    .mainSlider .controls div a span{font-size: 20px; color: white;}
 
 
     /* 공통 */
@@ -113,6 +130,7 @@
 
 
     /* 서비스 */
+    .serviceArea .serviceContent{position: relative;}
     .serviceArea .slider .pagerArea{width: 100%; z-index: 2; position: relative;}
     .serviceArea .slider > div .pager a{display: block; padding: 60px 0; background-color: white; box-sizing: border-box; text-align: center; border-width: 1px 1px 20px; border-style: solid; border-color: transparent; position: relative; }
     .serviceArea .slider > div .pager{text-align: center;}
@@ -128,6 +146,12 @@
     .serviceArea .slider > div[aria-hidden="false"] .pager a{border-color: #de0000; }
     .serviceArea .slider > div[aria-hidden="false"] .pager a span.material-icons{color: #de0000; border-color: #de0000;}
     .serviceArea .slider > div[aria-hidden="false"] .pager a::after{content: ''; position: absolute; left: calc(50% - 15px); bottom: -35px; width: 0; height: 0; border-width: 15px 15px 0; border-style: solid; border-color: #de0000 transparent transparent;} 
+    .serviceArea .controls{position: absolute; top: calc(12% - 30px); width: 100%; }
+    .serviceArea .controls div{position: absolute;}
+    .serviceArea .controls div.prev{left: 10px;}
+    .serviceArea .controls div.next{right: 10px;}
+    .serviceArea .controls div a{ color: #de0000;}
+    .serviceArea .controls div a span{font-size: 60px;}
 
     .serviceArea .bx-wrapper { box-shadow: none; border: none; background-color: #f3f3f3; margin-bottom: 0;}
     .serviceArea .slider > div{background-color: #f3f3f3; text-align: left; padding-bottom: 60px;}
@@ -195,6 +219,11 @@
     .mainSlider .slider > div p{max-width: 920px; font-size: 20px; font-weight: 400; line-height: 32px; margin-bottom: 35px;}
     .mainSlider .slider > div a{background-color: #de0000;}
     .mainSlider .slider > div.first{background-image: url('../images/mainSliderBG01.png');}
+    .mainSlider .controls{position: absolute; top: calc(50% - 7.5px); width: 100%; }
+    .mainSlider .controls div{position: absolute;}
+    .mainSlider .controls div.prev{left: 10px;}
+    .mainSlider .controls div.next{right: 10px;}
+    .mainSlider .controls div a span{font-size: 20px; color: white;}
 
 
     /* 공통 */
@@ -205,6 +234,7 @@
 
 
     /* 서비스 */
+    .serviceArea .serviceContent{position: relative;}
     .serviceArea .serviceContent .pagerArea{display: flex; position: relative; z-index: 2;}
     .serviceArea .serviceContent .pagerArea div{flex: 1;}
     .serviceArea .serviceContent .pagerArea div > a{display: block; padding: 40px 0; border-width: 1px 1px 20px; border-style: solid; border-color: transparent; box-sizing: border-box; cursor: pointer; position: relative;}
@@ -237,6 +267,12 @@
     .serviceArea .slider div:nth-of-type(3n + 3) ul li:nth-child(2) strong{background-image: url('../images/service03_02.png');}
     .serviceArea .slider div:nth-of-type(3n + 3) ul li:nth-child(3) strong{background-image: url('../images/service03_03.png');}
     .serviceArea .slider div ul li p{font-size: 16px; font-weight: 400; line-height: 25px; color: #666666;}
+    .serviceArea .controls{position: absolute; top: calc(70% - 30px); width: 100%; }
+    .serviceArea .controls div{position: absolute;}
+    .serviceArea .controls div.prev{left: 10px;}
+    .serviceArea .controls div.next{right: 10px;}
+    .serviceArea .controls div a{ color: #de0000;}
+    .serviceArea .controls div a span{font-size: 60px;}
 
 
     .service02Area .servicSwiper03{}

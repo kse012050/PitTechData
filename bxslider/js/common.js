@@ -2,6 +2,10 @@ $(document).ready(function(){
     $('.mainSlider .slider').bxSlider({
         pager:false,
         infiniteLoop:false,
+        prevSelector:'.mainSlider .prev',
+        prevText:'<span class="material-icons prev">arrow_back_ios</span>',
+        nextSelector:'.mainSlider .next',
+        nextText:'<span class="material-icons next">arrow_forward_ios</span>'
     });
 
 
@@ -10,6 +14,10 @@ $(document).ready(function(){
         // touchEnabled:false,
         infiniteLoop:false,
         pagerCustom:'.pagerArea',
+        prevSelector:'.serviceArea .prev',
+        prevText:'<span class="material-icons prev">arrow_back_ios</span>',
+        nextSelector:'.serviceArea .next',
+        nextText:'<span class="material-icons next">arrow_forward_ios</span>'
     });
 
     var serviceBoolean = true;
