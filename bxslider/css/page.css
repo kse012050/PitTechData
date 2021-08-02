@@ -78,7 +78,6 @@
     .recruitArea ul li:nth-child(1){background-image: url('../images/recruitImg01.png');}
     .recruitArea ul li:nth-child(2){background-image: url('../images/recruitImg02.png');}
     .recruitArea ul li:nth-child(3){background-image: url('../images/recruitImg03.png');}
-    /* .recruitArea ul li > *{width: 260px; margin: 0 auto;} */
     .recruitArea ul li strong{display: block; font-size: 1.750rem; font-weight: 600; line-height: 1.750rem; margin-bottom: 1.250rem;}
     .recruitArea ul li p{font-size: 1.375rem; font-weight: 400; line-height: 1.875rem;}
 
@@ -183,7 +182,6 @@
     .recruitArea ul li:nth-child(1){background-image: url('../images/recruitImg01.png');}
     .recruitArea ul li:nth-child(2){background-image: url('../images/recruitImg02.png');}
     .recruitArea ul li:nth-child(3){background-image: url('../images/recruitImg03.png');}
-    /* .recruitArea ul li > *{width: 260px; margin: 0 auto;} */
     .recruitArea ul li strong{display: block; font-size: 28px; font-weight: 600; line-height: 28px; margin-bottom: 20px;}
     .recruitArea ul li p{font-size: 22px; font-weight: 400; line-height: 30px;}
 
@@ -275,7 +273,6 @@
     .serviceArea .controls div a span{font-size: 60px;}
 
 
-    .service02Area .servicSwiper03{}
     .service02Area .servicSwiper03 .bx-viewport{padding-top: 500px;}
     .service02Area .servicSwiper03 .bx-wrapper{border: none; box-shadow: none; background-color: transparent;}
     .service02Area .servicSwiper03 .slider {position: static !important;}
@@ -287,9 +284,7 @@
     .customersArea > div h3{font-size: 30px; font-weight: 700; text-align: center; margin-bottom: 65px;}
     .customersArea > div h3 span{display: inline-block; padding-bottom: 10px; border-bottom: 2px solid black;}
     .customersArea > div ul::after{content: ''; display: block; visibility: hidden; clear: both;}
-    /* .customersArea > div ul{max-width: 1040px; margin: 0 auto;} */
     .customersArea > div ul li{float: left; width: 50%; box-sizing: border-box;}
-    .customersArea > div ul li:nth-child(2n + 1){}
     .customersArea > div ul li:nth-child(2n){padding-left: 70px; border-left: 1px solid #dfdfdf;}
     .customersArea > div ul li:nth-child(n + 3){margin-top: 30px;}
     .customersArea > div ul li:first-child:last-of-type{float: none; padding: 0; margin: 0 auto;}
@@ -306,7 +301,6 @@
     .recruitArea ul li:nth-child(1){background-image: url('../images/recruitImg01.png');}
     .recruitArea ul li:nth-child(2){background-image: url('../images/recruitImg02.png');}
     .recruitArea ul li:nth-child(3){background-image: url('../images/recruitImg03.png');}
-    /* .recruitArea ul li > *{width: 260px; margin: 0 auto;} */
     .recruitArea ul li strong{display: block; min-height: 56px; font-size: 26px; font-weight: 600; line-height: 28px; margin-bottom: 15px;}
     .recruitArea ul li p{font-size: 20px; font-weight: 400; line-height: 31px;}
 
