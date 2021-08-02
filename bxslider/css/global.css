@@ -2,8 +2,19 @@
 .btn , h2 , h3 , small , 
 .serviceArea strong{font-family: 'Poppins';}
 
-[data-scroll="bottomTop"]{transform: translateY(50px); opacity: 0; /* transition-duration: 1s; transition-property: transform , opacity; */}
-/* [data-scroll="bottomTop"].active{transform: translateY(0px); opacity: 1;} */
+.mainSlider .slider > div > *{animation-name: mainAni; animation-duration: 0.5s; animation-fill-mode: forwards; opacity: 0; transform: translateY(50px);}
+.mainSlider .slider > div > *:nth-child(1){animation-delay: 0s;}
+.mainSlider .slider > div > *:nth-child(2){animation-delay: 0.5s;}
+.mainSlider .slider > div > *:nth-child(3){animation-delay: 1s;}
+[data-scroll="bottomTop"]{transform: translateY(50px); opacity: 0; transition-property: transform , opacity;}
+[data-scroll="bottomTop"].active{transform: translateY(0px); opacity: 1; transition-duration: 0.5s; }
+[data-scroll="area"] > *{transform: translateY(50px); opacity: 0; transition-property: transform , opacity;}
+[data-scroll="area"].active > *{transform: translateY(0px); opacity: 1; transition-duration: 0.5s; }
+
+@keyframes mainAni {
+    0%{opacity: 0; transform: translateY(50px);}
+    100%{opacity: 1; transform: translateY(0px);}
+}
 
 @media screen and (max-width:640px) {
     html{font-size: 2.5vw;}

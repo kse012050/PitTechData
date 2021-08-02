@@ -36,7 +36,6 @@ $(document).ready(function(){
             serviceSlider.reloadSlider()
             serviceBoolean = false;
         }else if($(window).width() > 1280 && !serviceBoolean){
-            console.log(11);
             $('.serviceArea .slider .pager').remove();
             $('.serviceContent').prepend(servicePager);
             serviceSlider.reloadSlider()
@@ -66,30 +65,28 @@ function scrollEvent(){
         }
 
         $('[data-scroll]').each(function(){
-            console.log($(this).index());
             var dataScroll = $(this).attr('data-scroll');
-           /*  $(this).css({
-                'transition-delay' : 1 + $(this).index() + 's'
-            }) */
-            if($(window).scrollTop() > $(this).offset().top - ($(window).height() / 2)){
+            if($(window).scrollTop() > $(this).offset().top - ($(window).height() / 1.5)){
                 if(dataScroll == 'bottomTop'){
-                    $(this).addClass('active');
-                    $(this).delay($(this).index() * 500).animate({
-                        opacity : 1,
-                        transform:' translateY('+0+'px)'
-                    },1000)
+                    $(this).css({
+                        'transition-delay' : 0.5 * $(this).index() + 's'
+                    })
+                }else if(dataScroll == 'area'){
+                    $(this).children().each(function(){
+                        $(this).css({
+                            'transition-delay' : 0.5 * $(this).index() + 's'
+                        })
+                    })
                 }
+                $(this).addClass('active');
+            }else if($(window).scrollTop() < $(this).offset().top - ($(window).height())){
+                if(dataScroll == 'bottomTop' && dataScroll == 'area'){
+                    $(this).css({
+                        'transition-delay' : '0s'
+                    })
+                }
+                $(this).removeClass('active');
             }
         })
     })
-    $('[data-scroll]').each(function(){
-        if($(window).scrollTop() > $(this).offset() - $(window).height()){
-            $(this).delay($(this).index() * 500).animate({
-                opacity : 1,
-                transform:' translateY('+0+'px)'
-            },1000)
-        }
-    })
-
-    
 }
