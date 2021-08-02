@@ -80,9 +80,15 @@ function scrollEvent(){
                 }
                 $(this).addClass('active');
             }else if($(window).scrollTop() < $(this).offset().top - ($(window).height())){
-                if(dataScroll == 'bottomTop' && dataScroll == 'area'){
+                if(dataScroll == 'bottomTop'){
                     $(this).css({
                         'transition-delay' : '0s'
+                    })
+                }else if(dataScroll == 'area'){
+                    $(this).children().each(function(){
+                        $(this).css({
+                            'transition-delay' : '0s'
+                        })
                     })
                 }
                 $(this).removeClass('active');
