@@ -116,8 +116,7 @@ function privacyPopup(){
         e.preventDefault();
     })
 
-    $('.privacyPopup').on('mousewheel',function(e){
-        console.log(1);
+    $('.privacyPopup').on('mousewheel touchmove',function(e){
         e.preventDefault();
     })
 
@@ -125,7 +124,7 @@ function privacyPopup(){
         $('.privacyPopup').removeClass('active');
     })
 
-    $('.privacyPopup').children().click(function(e){
+    $('.privacyPopup').children().on('click touchmove',function(e){
         e.stopPropagation();
     });
 }
