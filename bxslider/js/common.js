@@ -5,6 +5,7 @@ $(document).ready(function(){
     mobileMenu();
     scrollEvent();
     customersImg();
+    privacyPopup();
 })
 
 function mainSliderArea(){
@@ -107,6 +108,21 @@ function customersImg(){
             'width' : $(this).width() / 16 + 'rem'
         })
     })
+}
+
+function privacyPopup(){
+    $('.popupBtn').click(function(e){
+        $('.privacyPopup').addClass('active');
+        e.preventDefault();
+    })
+
+    $('.privacyPopup , .privacyPopup .close').click(function(){
+        $('.privacyPopup').removeClass('active');
+    })
+
+    $('.privacyPopup').children().click(function(e){
+        e.stopPropagation();
+    });
 }
 
 function scrollEvent(){
