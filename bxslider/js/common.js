@@ -1,4 +1,12 @@
 $(document).ready(function(){
+    mainSlider();
+    serviceSlider();
+    mobileMenu();
+    scrollEvent();
+    customersImg();
+})
+
+function mainSlider(){
     $('.mainSlider .slider').bxSlider({
         pager:false,
         infiniteLoop:false,
@@ -7,17 +15,29 @@ $(document).ready(function(){
         nextSelector:'.mainSlider .next',
         nextText:'<span class="material-icons next">arrow_forward_ios</span>'
     });
+}
 
-
+function serviceSlider(){
     var serviceSlider = $('.serviceArea .slider').bxSlider({
         oneToOneTouch:false,
         // touchEnabled:false,
         infiniteLoop:false,
         pagerCustom:'.pagerArea',
         prevSelector:'.serviceArea .prev',
-        prevText:'<span class="material-icons prev">arrow_back_ios</span>',
+        prevText:'<span class="material-icons prev">arrow_back_ios_new</span>',
         nextSelector:'.serviceArea .next',
-        nextText:'<span class="material-icons next">arrow_forward_ios</span>'
+        nextText:'<span class="material-icons next">arrow_forward_ios</span>',
+        onSlideAfter:function($slideElement,oldIndex,newIndex){
+            $('.serviceArea .controls div a').removeClass('active')
+            if(newIndex == 0){
+                $('.serviceArea .controls div.prev a').addClass('active')
+            }else if(newIndex == ($slideElement.prevObject.length - 1)){
+                $('.serviceArea .controls div.next a').addClass('active')
+            }
+        },
+        onSliderLoad:function(){
+            $('.serviceArea .controls div.prev a').addClass('active')
+        }
     });
 
     var serviceBoolean = true;
@@ -42,10 +62,13 @@ $(document).ready(function(){
             serviceBoolean = true;
         }
     }
-    
-    scrollEvent();
-    customersImg();
-})
+}
+
+function mobileMenu(){
+    $('header div nav button').click(function(){
+        $('header div nav ul').toggleClass('active');
+    })
+}
 
 function customersImg(){
     $('.customersArea > div ul li figure img').each(function(){
@@ -58,7 +81,7 @@ function customersImg(){
 function scrollEvent(){
     // 메뉴
     $(window).scroll(function(){
-        if($(window).scrollTop() > $(window).height() - $('header').height()){
+        if($(window).scrollTop() > 0){
             $('header').addClass('active');
         }else{
             $('header').removeClass('active');

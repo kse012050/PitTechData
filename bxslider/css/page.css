@@ -45,6 +45,7 @@
     .serviceArea .controls div.prev{left: 0.625rem;}
     .serviceArea .controls div.next{right: 0.625rem;}
     .serviceArea .controls div a{ color: #de0000;}
+    .serviceArea .controls div a.active{color: #888888;}
     .serviceArea .controls div a span{font-size: 3.750rem;}
 
     .serviceArea .bx-wrapper { box-shadow: none; border: none; background-color: #f3f3f3; margin-bottom: 0;}
@@ -150,6 +151,7 @@
     .serviceArea .controls div.prev{left: 10px;}
     .serviceArea .controls div.next{right: 10px;}
     .serviceArea .controls div a{ color: #de0000;}
+    .serviceArea .controls div a.active{color: #888888;}
     .serviceArea .controls div a span{font-size: 60px;}
 
     .serviceArea .bx-wrapper { box-shadow: none; border: none; background-color: #f3f3f3; margin-bottom: 0;}
@@ -270,6 +272,7 @@
     .serviceArea .controls div.prev{left: 10px;}
     .serviceArea .controls div.next{right: 10px;}
     .serviceArea .controls div a{ color: #de0000;}
+    .serviceArea .controls div a.active{color: #888888;}
     .serviceArea .controls div a span{font-size: 60px;}
 
 
@@ -287,7 +290,7 @@
     .customersArea > div ul li{float: left; width: 50%; box-sizing: border-box;}
     .customersArea > div ul li:nth-child(2n){padding-left: 70px; border-left: 1px solid #dfdfdf;}
     .customersArea > div ul li:nth-child(n + 3){margin-top: 30px;}
-    .customersArea > div ul li:first-child:last-of-type{float: none; padding: 0; margin: 0 auto;}
+    .customersArea > div ul li:first-child:last-of-type{float: none; padding: 0; margin: 0 auto; display: inline-block; width: auto;}
     .customersArea > div ul li figure{display: flex;}
     .customersArea > div ul li figure img{margin-right: 30px;}
     .customersArea > div ul li figure figcaption{font-size: 22px; color: #666666; line-height: 28px; display: flex; flex-direction: column; justify-content: flex-end; padding-bottom: 10px;}
