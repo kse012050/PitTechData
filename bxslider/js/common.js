@@ -116,6 +116,11 @@ function privacyPopup(){
         e.preventDefault();
     })
 
+    $('.privacyPopup').on('mousewheel',function(e){
+        console.log(1);
+        e.preventDefault();
+    })
+
     $('.privacyPopup , .privacyPopup .close').click(function(){
         $('.privacyPopup').removeClass('active');
     })
