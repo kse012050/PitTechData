@@ -77,18 +77,20 @@ function menu(){
 }
 
 function mobileMenu(){
-    if($(window).width() < 1280){
-        $('header div nav button').click(function(){
-            $('header div nav ul').toggleClass('active');
+    $('header div nav button').click(function(){
+            if($(window).width() < 1280){
+                $('header div nav ul').toggleClass('active');
+            }
         })
 
         $('header div nav ul li a').click(function(){
             $('header div nav ul').removeClass('active');
         })
         $('header div nav ul').on('mousewheel',function(e){
-            e.preventDefault();
+            if($(window).width() < 1280){
+                e.preventDefault();
+            }
         })
-    }
 }
 
 function customersImg(){
