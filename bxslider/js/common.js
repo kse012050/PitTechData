@@ -5,7 +5,6 @@ $(document).ready(function(){
     mobileMenu();
     scrollEvent();
     customersImg();
-    privacyPopup();
 })
 
 function mainSliderArea(){
@@ -67,39 +66,31 @@ function serviceSlider(){
 }
 
 function menu(){
-    $('header div nav ul li a').click(function(e){
-        var menuIdx = $(this).parent().index();
-        e.preventDefault();
-        $('html,body').animate({scrollTop : $('[id]').eq(menuIdx).offset().top} )
-
-    })
-
     $(window).scroll(function(){
         $('[id]').each(function(){
             if($(window).scrollTop() > $(this).offset().top - 1){
                 $('header div nav ul li').removeClass('active')
                 $('header div nav ul li').eq($('[id]').index(this)).addClass('active');
-            };
-        });
-    });
+            }
+        })
+    })
 }
 
 function mobileMenu(){
     $('header div nav button').click(function(){
-        if($(window).width() < 1280){
-            $('header div nav ul').toggleClass('active');
-        }
-    })
+            if($(window).width() < 1280){
+                $('header div nav ul').toggleClass('active');
+            }
+        })
 
-    $('header div nav ul li a').click(function(){
-        $('header div nav ul').removeClass('active');
-    });
-
-    $('header div nav ul').on('mousewheel',function(e){
-        if($(window).width() < 1280){
-            e.preventDefault();
-        }
-    })
+        $('header div nav ul li a').click(function(){
+            $('header div nav ul').removeClass('active');
+        })
+        $('header div nav ul').on('mousewheel',function(e){
+            if($(window).width() < 1280){
+                e.preventDefault();
+            }
+        })
 }
 
 function customersImg(){
@@ -108,25 +99,6 @@ function customersImg(){
             'width' : $(this).width() / 16 + 'rem'
         })
     })
-}
-
-function privacyPopup(){
-    $('.popupBtn').click(function(e){
-        $('.privacyPopup').addClass('active');
-        e.preventDefault();
-    })
-
-    $('.privacyPopup').on('mousewheel touchmove',function(e){
-        e.preventDefault();
-    })
-
-    $('.privacyPopup , .privacyPopup .close').click(function(){
-        $('.privacyPopup').removeClass('active');
-    })
-
-    $('.privacyPopup').children().on('click touchmove',function(e){
-        e.stopPropagation();
-    });
 }
 
 function scrollEvent(){
@@ -140,12 +112,12 @@ function scrollEvent(){
 
         $('[data-scroll]').each(function(){
             var dataScroll = $(this).attr('data-scroll');
-            if($(window).scrollTop() > $(this).offset().top - ($(window).height() / 1.2)){
-                if(dataScroll == 'bottomTop'){
+            if($(window).scrollTop() > $(this).offset().top - ($(window).height() / 1.5)){
+                if(dataScroll == 'bottomTop'  && $(window).width() > 1280){
                     $(this).css({
                         'transition-delay' : 0.5 * $(this).index() + 's'
                     })
-                }else if(dataScroll == 'area'){
+                }else if(dataScroll == 'area' ){
                     $(this).children().each(function(){
                         $(this).css({
                             'transition-delay' : 0.5 * $(this).index() + 's'

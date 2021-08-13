@@ -32,8 +32,8 @@
     .serviceArea .slider > div:nth-of-type(1) .pager a strong{background-image: url('../images/serviceIcon01.png');}
     .serviceArea .slider > div:nth-of-type(2) .pager a strong{background-image: url('../images/serviceIcon02.png');}
     .serviceArea .slider > div:nth-of-type(3) .pager a strong{background-image: url('../images/serviceIcon03.png');}
-    .serviceArea .slider > div .pager a p{font-size: 1.375rem; font-weight: 500; line-height: 1.875rem; min-height: 8.750rem; max-width: 430px; margin: 0 auto;}
-    .serviceArea .slider > div .pager a span.material-icons{font-size: 1.125rem; font-weight: 700; padding: 0.313rem; color: #888888; border: 1px solid #888888;}
+    .serviceArea .slider > div .pager a p{font-size: 1.375rem; font-weight: 500; line-height: 1.875rem; min-height: 8.750rem; max-width: 400px; ; margin: 0 auto;}
+    .serviceArea .slider > div .pager a span.material-icons{display: none; font-size: 1.125rem; font-weight: 700; padding: 0.313rem; color: #888888; border: 1px solid #888888;}
     .serviceArea .slider > div:nth-of-type(1)[aria-hidden="false"] .pager strong{background-image: url('../images/serviceIcon01_active.png');}
     .serviceArea .slider > div:nth-of-type(2)[aria-hidden="false"] .pager strong{background-image: url('../images/serviceIcon02_active.png');}
     .serviceArea .slider > div:nth-of-type(3)[aria-hidden="false"] .pager strong{background-image: url('../images/serviceIcon03_active.png');}
@@ -97,25 +97,11 @@
     .contactUsArea fieldset ul li:not(:last-child){padding-bottom: 0.625rem; border-bottom: 2px solid black;}
     .contactUsArea fieldset ul li:not(:nth-last-child(-n + 2)){margin-bottom: 2.500rem;}
     .contactUsArea fieldset ul li:last-child{margin-top: 1.875rem; justify-content: center;}
-    .contactUsArea fieldset ul li button.popupBtn{font-family: 'Noto Sans KR';  font-size: 1.250rem; font-weight:500; line-height: 1;}
     .contactUsArea fieldset ul li label{font-size: 1.250rem; font-weight:500;}
     .contactUsArea fieldset ul li label + *{font-size: 1.250rem; font-weight:500; border: none;}
     .contactUsArea fieldset ul li label + input{flex: 1; padding-left: 1.250rem; outline: none;}
     .contactUsArea fieldset ul li label + textarea{width: 100%; min-height: 15.000rem; padding-top: 0.625rem; outline: none; resize: none;}
     .contactUsArea fieldset ul li input[type="checkbox"]{width: 1.125rem; height: 1.125rem; margin-right: 0.625rem; }
-
-    .contactUsArea .privacyPopup{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); display: none; justify-content: center; align-items: center; z-index: 100; }
-    .contactUsArea .privacyPopup > div{max-width: 1200px; width: calc(100% - 60px); height: 80vh; background-color: white; display: flex; flex-direction: column; align-items: center; padding: 2.188rem 1.250rem 1.250rem; box-sizing: border-box; position: relative;}
-    .contactUsArea .privacyPopup > div h3{font-size: 1.625rem; font-weight: 700; /* padding: 35px 0; */ margin-bottom: 1.875rem;}
-    .contactUsArea .privacyPopup > div > div{flex: 1; background-color: #f8f8f8; font-size: 0.813rem; font-weight: 300; line-height: 1.438rem; text-align: left; padding: 1.875rem; box-sizing: border-box; overflow-y: auto;}
-    .contactUsArea .privacyPopup > div > div *{letter-spacing: -0.031rem;}
-    .contactUsArea .privacyPopup > div > div > p{margin-bottom: 1.875rem;}
-    .contactUsArea .privacyPopup > div > div > ol > li{margin-bottom: 1.875rem; counter-increment: privacyCounter;}
-    .contactUsArea .privacyPopup > div > div > ol > li::before{content: '제'counter(privacyCounter)'조(' attr(title) ')';}
-    .contactUsArea .privacyPopup > div > div > ol > li > *:not(:last-child){margin-bottom: 1.875rem;}
-    .contactUsArea .privacyPopup > div > div > ol > li ol{list-style: auto; list-style-position: inside;}
-    .contactUsArea .privacyPopup > div > span.close{position: absolute; right: 0; top: 0; font-size: 2.188rem; padding: 0.469rem; background-color: #de0000; color: white; cursor: pointer;}
-    .contactUsArea .privacyPopup.active{display: flex;}
 }
 
 @media screen and (min-width:641px) and (max-width:1279px) {
@@ -153,7 +139,7 @@
     .serviceArea .slider > div:nth-of-type(2) .pager a strong{background-image: url('../images/serviceIcon02.png');}
     .serviceArea .slider > div:nth-of-type(3) .pager a strong{background-image: url('../images/serviceIcon03.png');}
     .serviceArea .slider > div .pager a p{font-size: 22px; font-weight: 500; line-height: 30px; min-height: 140px; max-width: 430px; margin: 0 auto;}
-    .serviceArea .slider > div .pager a span.material-icons{font-size: 18px; font-weight: 700; padding: 5px; color: #888888; border: 1px solid #888888;}
+    .serviceArea .slider > div .pager a span.material-icons{display: none; font-size: 18px; font-weight: 700; padding: 5px; color: #888888; border: 1px solid #888888;}
     .serviceArea .slider > div:nth-of-type(1)[aria-hidden="false"] .pager strong{background-image: url('../images/serviceIcon01_active.png');}
     .serviceArea .slider > div:nth-of-type(2)[aria-hidden="false"] .pager strong{background-image: url('../images/serviceIcon02_active.png');}
     .serviceArea .slider > div:nth-of-type(3)[aria-hidden="false"] .pager strong{background-image: url('../images/serviceIcon03_active.png');}
@@ -216,25 +202,11 @@
     .contactUsArea fieldset ul li:not(:last-child){padding-bottom: 10px; border-bottom: 2px solid black;}
     .contactUsArea fieldset ul li:not(:nth-last-child(-n + 2)){margin-bottom: 40px;}
     .contactUsArea fieldset ul li:last-child{margin-top: 30px; justify-content: center;}
-    .contactUsArea fieldset ul li button.popupBtn{font-family: 'Noto Sans KR';  font-size: 20px; font-weight:500; line-height: 1;}
     .contactUsArea fieldset ul li label{font-size: 20px; font-weight:500;}
     .contactUsArea fieldset ul li label + *{font-size: 20px; font-weight:500; border: none;}
     .contactUsArea fieldset ul li label + input{flex: 1; padding-left: 20px; outline: none;}
     .contactUsArea fieldset ul li label + textarea{width: 100%; min-height: 240px; padding-top: 10px; outline: none; resize: none;}
     .contactUsArea fieldset ul li input[type="checkbox"]{width: 18px; height: 18px; margin-right: 10px; }
-
-    .contactUsArea .privacyPopup{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); display: none; justify-content: center; align-items: center; z-index: 100; }
-    .contactUsArea .privacyPopup > div{max-width: 1200px; width: calc(100% - 60px); height: 80vh; background-color: white; display: flex; flex-direction: column; align-items: center; padding: 35px 20px 20px; box-sizing: border-box; position: relative;}
-    .contactUsArea .privacyPopup > div h3{font-size: 26px; font-weight: 700; /* padding: 35px 0; */ margin-bottom: 30px;}
-    .contactUsArea .privacyPopup > div > div{flex: 1; background-color: #f8f8f8; font-size: 13px; font-weight: 300; line-height: 23px; text-align: left; padding: 30px; box-sizing: border-box; overflow-y: auto;}
-    .contactUsArea .privacyPopup > div > div *{letter-spacing: -0.5px;}
-    .contactUsArea .privacyPopup > div > div > p{margin-bottom: 30px;}
-    .contactUsArea .privacyPopup > div > div > ol > li{margin-bottom: 30px; counter-increment: privacyCounter;}
-    .contactUsArea .privacyPopup > div > div > ol > li::before{content: '제'counter(privacyCounter)'조(' attr(title) ')';}
-    .contactUsArea .privacyPopup > div > div > ol > li > *:not(:last-child){margin-bottom: 30px;}
-    .contactUsArea .privacyPopup > div > div > ol > li ol{list-style: auto; list-style-position: inside;}
-    .contactUsArea .privacyPopup > div > span.close{position: absolute; right: 0; top: 0; font-size: 35px; padding: 7.5px; background-color: #de0000; color: white; cursor: pointer;}
-    .contactUsArea .privacyPopup.active{display: flex;}
 }
 
 @media screen and (min-width:1280px) {
@@ -351,23 +323,9 @@
     .contactUsArea fieldset ul li:not(:nth-last-child(-n + 2)){margin-bottom: 40px;}
     .contactUsArea fieldset ul li:last-child{margin-top: 20px;}
     .contactUsArea fieldset ul li.case01{width: 45%;}
-    .contactUsArea fieldset ul li button.popupBtn{font-family: 'Noto Sans KR';  font-size: 20px; font-weight:500; line-height: 1;}
     .contactUsArea fieldset ul li label{font-size: 20px; font-weight:500;}
     .contactUsArea fieldset ul li label + *{font-size: 20px; font-weight:500; border: none;}
     .contactUsArea fieldset ul li label + input{flex: 1; padding-left: 20px; outline: none;}
     .contactUsArea fieldset ul li label + textarea{width: 100%; min-height: 240px; padding-top: 10px; outline: none;  resize: none;}
     .contactUsArea fieldset ul li input[type="checkbox"]{width: 18px; height: 18px; margin-right: 15px; }
-
-    .contactUsArea .privacyPopup{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); display: none; justify-content: center; align-items: center; z-index: 100;}
-    .contactUsArea .privacyPopup > div{max-width: 1200px; width: calc(100% - 60px); height: 80vh; background-color: white; display: flex; flex-direction: column; align-items: center; padding: 35px 20px 20px; box-sizing: border-box; position: relative;}
-    .contactUsArea .privacyPopup > div h3{font-size: 26px; font-weight: 700; /* padding: 35px 0; */ margin-bottom: 30px;}
-    .contactUsArea .privacyPopup > div > div{flex: 1; background-color: #f8f8f8; font-size: 13px; font-weight: 300; line-height: 23px; text-align: left; padding: 30px; box-sizing: border-box; overflow-y: auto;}
-    .contactUsArea .privacyPopup > div > div *{letter-spacing: -0.5px;}
-    .contactUsArea .privacyPopup > div > div > p{margin-bottom: 30px;}
-    .contactUsArea .privacyPopup > div > div > ol > li{margin-bottom: 30px; counter-increment: privacyCounter;}
-    .contactUsArea .privacyPopup > div > div > ol > li::before{content: '제'counter(privacyCounter)'조(' attr(title) ')';}
-    .contactUsArea .privacyPopup > div > div > ol > li > *:not(:last-child){margin-bottom: 30px;}
-    .contactUsArea .privacyPopup > div > div > ol > li ol{list-style: auto; list-style-position: inside;}
-    .contactUsArea .privacyPopup > div > span.close{position: absolute; right: 0; top: 0; font-size: 35px; padding: 7.5px; background-color: #de0000; color: white; cursor: pointer;}
-    .contactUsArea .privacyPopup.active{display: flex;}
 }
